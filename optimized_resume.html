@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - AI Engineer & Full Stack Developer</title>
+    <style>
+        :root {
+            --primary-color: #1e3a8a;
+            --secondary-color: #2563eb;
+            --text-dark: #1f2937;
+            --text-light: #4b5563;
+            --bg-light: #f3f4f6;
+            --border-color: #e5e7eb;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: var(--bg-light);
+            margin: 0;
+            padding: 40px 20px;
+        }
+
+        .resume-container {
+            max-width: 850px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 40px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            border-radius: 8px;
+            border-top: 8px solid var(--primary-color);
+        }
+
+        header {
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 25px;
+            margin-bottom: 25px;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin: 0 0 5px 0;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+
+        .subtitle {
+            font-size: 1.25rem;
+            color: var(--secondary-color);
+            margin: 0;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .contact-info {
+            text-align: right;
+            font-size: 0.9rem;
+            color: var(--text-light);
+        }
+
+        .contact-info p {
+            margin: 3px 0;
+        }
+
+        section {
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            font-size: 1.3rem;
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 5px;
+            margin-top: 0;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .summary p {
+            color: var(--text-light);
+            font-size: 1.05rem;
+            margin: 0;
+            text-align: justify;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+
+        .skill-category {
+            background-color: #f8fafc;
+            padding: 15px;
+            border-radius: 6px;
+            border-left: 4px solid var(--secondary-color);
+        }
+
+        .skill-category h3 {
+            margin: 0 0 10px 0;
+            font-size: 1rem;
+            color: var(--primary-color);
+        }
+
+        .skill-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .skill-item {
+            background-color: #e2e8f0;
+            color: var(--text-dark);
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+
+        .experience-item {
+            margin-bottom: 25px;
+        }
+
+        .experience-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .exp-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 8px;
+        }
+
+        .exp-title {
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: var(--text-dark);
+        }
+
+        .exp-company {
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--secondary-color);
+        }
+
+        .exp-date {
+            font-size: 0.9rem;
+            color: var(--text-light);
+            font-style: italic;
+        }
+
+        .exp-details {
+            margin: 0;
+            padding-left: 20px;
+            color: var(--text-light);
+        }
+
+        .exp-details li {
+            margin-bottom: 6px;
+            text-align: justify;
+        }
+
+        .highlight {
+            font-weight: 600;
+            color: var(--primary-color);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="resume-container">
+        <header>
+            <div class="header-content">
+                <div>
+                    <h1>Alex Mercer</h1>
+                    <p class="subtitle">AI Engineer & Full Stack Developer</p>
+                </div>
+                <div class="contact-info">
+                    <p>Email: alex.mercer@email.com</p>
+                    <p>Phone: (555) 019-2834</p>
+                    <p>Location: San Francisco, CA</p>
+                    <p>GitHub: github.com/alexmercer</p>
+                </div>
+            </div>
+        </header>
+
+        <section class="summary">
+            <h2>Professional Summary</h2>
+            <p>
+                Highly analytical and driven Full Stack Developer transitioning into AI Engineering, backed by over <strong>700 days of dedicated training</strong> in Python, machine learning workflows, and modern agentic architectures. Expert at building, optimizing, and scaling intelligent systems with a strong emphasis on <span class="highlight">Autonomous Agents</span> and <span class="highlight">LLM Orchestration</span>. Seamlessly bridges backend infrastructure, dynamic web experiences using <span class="highlight">React.js</span>, and cutting-edge generative AI technologies to solve complex user and business problems.
+            </p>
+        </section>
+
+        <section>
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>AI & Machine Learning</h3>
+                    <ul class="skill-list">
+                        <li class="skill-item">LangGraph</li>
+                        <li class="skill-item">Autonomous Agents</li>
+                        <li class="skill-item">LLM Orchestration</li>
+                        <li class="skill-item">ML Workflows</li>
+                        <li class="skill-item">Python</li>
+                        <li class="skill-item">Prompt Engineering</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Full Stack Web Development</h3>
+                    <ul class="skill-list">
+                        <li class="skill-item">React.js</li>
+                        <li class="skill-item">Django</li>
+                        <li class="skill-item">JavaScript</li>
+                        <li class="skill-item">HTML5 & CSS3</li>
+                        <li class="skill-item">RESTful APIs</li>
+                        <li class="skill-item">PostgreSQL</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Selected AI & Software Projects</h2>
+            
+            <div class="experience-item">
+                <div class="exp-header">
+                    <div>
+                        <span class="exp-title">Lead Architect / Developer</span> - 
+                        <span class="exp-company">AI-Powered ATS Resume Optimization Engine</span>
+                    </div>
+                    <span class="exp-date">Project-Based</span>
+                </div>
+                <ul class="exp-details">
+                    <li>Designed and engineered a production-ready ATS resume optimization platform utilizing <span class="highlight">LangGraph</span> to coordinate stateful multi-agent workflows.</li>
+                    <li>Developed and deployed specialized <span class="highlight">Autonomous Agents</span> capable of parsing, grading, and dynamically rewriting resumes to match specific recruiter intent.</li>
+                    <li>Implemented complex <span class="highlight">LLM Orchestration</span> pipelines to manage prompt versioning, optimize API token consumption, and execute parallel reasoning tasks.</li>
+                    <li>Built a responsive, dynamic user dashboard from scratch using <span class="highlight">React.js</span> for real-time interaction feedback and seamless resume parsing visualization.</li>
+                    <li>Structured a secure, scalable Python-based backend using Django to handle file transfers, asynchronous task processing, and database persistence.</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="exp-header">
+                    <div>
+                        <span class="exp-title">Full Stack Developer</span> - 
+                        <span class="exp-company">Dynamic Web Applications Portfolio</span>
+                    </div>
+                    <span class="exp-date">2022 - Present</span>
+                </div>
+                <ul class="exp-details">
+                    <li>Built and maintained modern responsive web applications using a robust tech stack consisting of <span class="highlight">React.js</span>, Django, HTML5, and CSS3.</li>
+                    <li>Designed clean RESTful APIs in Django to seamlessly bridge database layers with interactive frontend client views.</li>
+                    <li>Optimized application performance, reducing component load times and streamlining database query execution patterns.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>Education & Intensive Training</h2>
+            <div class="experience-item">
+                <div class="exp-header">
+                    <div>
+                        <span class="exp-title">Advanced Python & Machine Learning Specialization</span> - 
+                        <span class="exp-company">Self-Directed Immersive Track</span>
+                    </div>
+                    <span class="exp-date">700+ Days Dedicated Training</span>
+                </div>
+                <ul class="exp-details">
+                    <li>Dedicated 700+ days to deep-dive training focusing on Python development, algorithmic optimization, statistical modeling, and ML pipelines.</li>
+                    <li>Constructed and evaluated predictive models and applied neural architectures to text classification and conversational AI challenges.</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+
+</body>
+</html>
