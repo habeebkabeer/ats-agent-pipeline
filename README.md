@@ -15,7 +15,7 @@ This project leverages **LangGraph** to orchestrate specialized AI agents powere
 
 ## Installation & Setup
 1. Clone the repository:
-   `git clone https://github.com/yourusername/ats-agent-pipeline.git`
+   `git clone https://github.com/habeebkabeer/ats-agent-pipeline.git`
 2. Create and activate a virtual environment:
    `python -m venv venv`
 3. Install dependencies:
